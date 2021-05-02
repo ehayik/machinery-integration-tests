@@ -1,0 +1,3 @@
+[submodule "libs/machinery-bom"]
+	path = libs/machinery-bom
+	url = https://github.com/eljaiek/machinery-bom.git

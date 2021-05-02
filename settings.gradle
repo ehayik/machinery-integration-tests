@@ -1,0 +1,5 @@
+
+rootProject.name = 'machinery-integration-tests'
+
+includeBuild 'libs/machinery-bom'
+
