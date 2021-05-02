@@ -1,0 +1,12 @@
+
+dependencies {
+    runtimeOnly 'com.h2database:h2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'com.github.eljaiek.machinery:machinery-web-starter'
+    implementation 'com.github.eljaiek.machinery:machinery-web-i8ln'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
