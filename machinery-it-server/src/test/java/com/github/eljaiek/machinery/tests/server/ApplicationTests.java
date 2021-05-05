@@ -8,11 +8,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ApplicationTests {
 
-    @Autowired
-    MessageBundle messageBundle;
+    @Autowired MessageBundle messageBundle;
 
     @Test
     @SuppressWarnings("java:S2699")
-    void contextLoads() {
-    }
+    void contextLoads() {}
 }
