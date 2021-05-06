@@ -19,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with: 
+        submodules: 'recursive'
 
     - name: Setup JDK ${{ matrix.java-version }}
       uses: actions/setup-java@v1
