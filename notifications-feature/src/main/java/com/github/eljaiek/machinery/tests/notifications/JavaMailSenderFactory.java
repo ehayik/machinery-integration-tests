@@ -1,17 +1,17 @@
 package com.github.eljaiek.machinery.tests.notifications;
 
+import static com.github.eljaiek.machinery.config.core.KeyOperators.removePrefix;
+import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.HOST;
+import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.PASSWORD;
+import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.PORT;
+import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.USERNAME;
+
 import com.github.eljaiek.machinery.config.core.ConfigMap;
 import com.github.eljaiek.machinery.config.core.ConfigMaps;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
-
-import static com.github.eljaiek.machinery.config.core.KeyOperators.removePrefix;
-import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.HOST;
-import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.PASSWORD;
-import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.PORT;
-import static com.github.eljaiek.machinery.tests.notifications.MailSenderKeys.USERNAME;
 
 @Component
 @RequiredArgsConstructor
