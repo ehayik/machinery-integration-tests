@@ -8,5 +8,9 @@ dependencies {
     implementation 'com.github.eljaiek.machinery:machinery-web-starter'
     implementation 'com.github.eljaiek.machinery:machinery-web-i8ln'
 
+    implementation 'com.github.eljaiek.machinery:machinery-configmap-starter'
+    implementation 'com.github.eljaiek.machinery:jackson-datatype-machinery-configmap'
+    implementation(project(':notifications-feature'))
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

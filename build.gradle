@@ -11,8 +11,6 @@ plugins {
     id 'com.github.sherter.google-java-format' version '0.9'
 }
 
-sourceCompatibility = '11'
-
 googleJavaFormat {
     options style: 'AOSP'
 }
@@ -22,6 +20,12 @@ compileJava.dependsOn 'googleJavaFormat'
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
     }
 }
 

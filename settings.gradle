@@ -3,4 +3,5 @@ rootProject.name = 'machinery-integration-tests'
 
 includeBuild 'libs/machinery-bom'
 include 'machinery-it-server'
+include 'notifications-feature'
 

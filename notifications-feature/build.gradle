@@ -1,0 +1,7 @@
+
+dependencies {
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'org.springframework.boot:spring-boot'
+    implementation 'com.github.eljaiek.machinery:machinery-configmap-core'
+    implementation 'org.springframework:spring-context-support'
+}
