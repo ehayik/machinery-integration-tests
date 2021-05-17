@@ -1,29 +1,22 @@
 package com.github.eljaiek.machinery.tests.server;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 import com.github.eljaiek.machinery.config.core.ConfigMap;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 
-@SpringBootTest(webEnvironment = RANDOM_PORT)
-class MachineryConfigMapTests {
-
-    @LocalServerPort int port;
-    @Autowired TestRestTemplate restTemplate;
+class MachineryConfigMapTests extends BaseIntegrationTests {
 
     @Test
     @SuppressWarnings("java:S2699")
     void contextLoads() {
+        // When
         ResponseEntity<ConfigMap> resp =
                 restTemplate.getForEntity(
-                        "http://localhost:" + port + "/notifications/config/mailSender",
-                        ConfigMap.class);
+                        buildUrl("/notifications/config/mailSender"), ConfigMap.class);
+
+        // Then
         assertThat(resp.getStatusCodeValue()).isNotEqualTo(404);
     }
 }
