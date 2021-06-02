@@ -48,7 +48,7 @@ jobs:
         restore-keys: ${{ runner.os }}-maven
 
     - name: Publish machinery modules to maven local repository
-      run: ./gradlew publishAllToMavenLocal
+      run:  ./gradlew :machinery-bom:publishAllToMavenLocal
 
     - name: Grant execute permission for mvnw
       run: chmod +x mvnw
