@@ -20,7 +20,6 @@
     </properties>
 
     <modules>
-        <module>libs/machinery-bom</module>
         <module>notifications-feature</module>
         <module>machinery-it-server</module>
     </modules>
