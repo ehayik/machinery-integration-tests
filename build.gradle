@@ -13,6 +13,8 @@ plugins {
 
 googleJavaFormat {
     options style: 'AOSP'
+    exclude '.mvn/wrapper/MavenWrapperDownloader.java'
+    exclude 'libs/**'
 }
 
 compileJava.dependsOn 'googleJavaFormat'
