@@ -24,7 +24,7 @@
 
         <dependency>
             <groupId>com.github.eljaiek.machinery</groupId>
-            <artifactId>machinery-configmap-starter</artifactId>
+            <artifactId>machinery-configmap-starter-jpa</artifactId>
         </dependency>
 
         <dependency>
